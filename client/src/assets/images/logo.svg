@@ -1,0 +1,20 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <rect width="50" height="50" rx="12" fill="#f59e0b"/>
+
+
+    <rect x="10" y="10" width="22" height="22" rx="4" fill="white"/>
+    
+
+    <rect x="14" y="14" width="22" height="22" rx="4" fill="#e5e7eb"/>
+    
+
+    <rect x="18" y="18" width="22" height="22" rx="4" fill="white"/>
+    
+
+    <rect x="21" y="26" width="16" height="4" rx="2" fill="#d1d5db"/>
+
+
+    <text x="60" y="36" fill="#f59e0b" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="24" font-weight="600" letter-spacing="1">KeepHub</text>
+</svg>

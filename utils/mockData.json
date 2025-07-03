@@ -1,0 +1,512 @@
+[
+  {
+    "title": "React 18 Complete Guide",
+    "platform": "Udemy",
+    "url": "https://www.udemy.com/course/react-complete-guide",
+    "resourceType": "course",
+    "resourceStatus": "to read",
+    "tags": ["React", "JavaScript", "Frontend", "Hooks"],
+    "notes": "Comprehensive React course covering the latest features",
+    "createdAt": "2024-11-15T10:30:00Z"
+  },
+  {
+    "title": "Advanced Node.js Patterns",
+    "platform": "Medium",
+    "url": "https://medium.com/@nodejs/advanced-patterns",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["Node.js", "Backend", "Patterns", "JavaScript"],
+    "notes": "Excellent article covering design patterns in Node.js",
+    "createdAt": "2024-11-10T14:20:00Z"
+  },
+  {
+    "title": "MongoDB Performance Optimization",
+    "platform": "MongoDB University",
+    "url": "https://university.mongodb.com/courses/M201",
+    "resourceType": "course",
+    "resourceStatus": "in progress",
+    "tags": ["MongoDB", "Database", "Performance", "Backend"],
+    "notes": "Currently learning about indexing strategies",
+    "createdAt": "2024-10-25T09:15:00Z"
+  },
+  {
+    "title": "Docker for Developers",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=docker-tutorial",
+    "resourceType": "video",
+    "resourceStatus": "completed",
+    "tags": ["Docker", "DevOps", "Containers"],
+    "notes": "Great introduction to containerization",
+    "createdAt": "2024-10-20T16:45:00Z"
+  },
+  {
+    "title": "GraphQL Schema Design Best Practices",
+    "platform": "Apollo Blog",
+    "url": "https://www.apollographql.com/blog/schema-design",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["GraphQL", "API", "Schema", "Backend"],
+    "notes": "Must read for GraphQL implementation",
+    "createdAt": "2024-10-12T11:30:00Z"
+  },
+  {
+    "title": "Figma for Developers",
+    "platform": "Figma",
+    "url": "https://help.figma.com/hc/developer-resources",
+    "resourceType": "tool",
+    "resourceStatus": "completed",
+    "tags": ["Design", "Figma", "UI", "Collaboration"],
+    "notes": "Essential design tool for frontend development",
+    "createdAt": "2024-09-28T13:20:00Z"
+  },
+  {
+    "title": "TypeScript Handbook",
+    "platform": "TypeScript Official",
+    "url": "https://www.typescriptlang.org/docs/",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["TypeScript", "JavaScript", "Types"],
+    "notes": "Official TypeScript documentation",
+    "createdAt": "2024-09-18T15:10:00Z"
+  },
+  {
+    "title": "CSS Grid Complete Course",
+    "platform": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/news/css-grid-tutorial",
+    "resourceType": "video",
+    "resourceStatus": "in progress",
+    "tags": ["CSS", "Layout", "Frontend", "Grid"],
+    "notes": "Learning modern CSS layout techniques",
+    "createdAt": "2024-09-05T08:45:00Z"
+  },
+  {
+    "title": "AWS Lambda Functions Guide",
+    "platform": "AWS Documentation",
+    "url": "https://docs.aws.amazon.com/lambda/",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["AWS", "Serverless", "Lambda", "Cloud"],
+    "notes": "Planning to learn serverless architecture",
+    "createdAt": "2024-08-25T12:00:00Z"
+  },
+  {
+    "title": "Postman API Testing",
+    "platform": "Postman",
+    "url": "https://learning.postman.com/",
+    "resourceType": "tool",
+    "resourceStatus": "completed",
+    "tags": ["API", "Testing", "Tools", "Backend"],
+    "notes": "Great tool for API development and testing",
+    "createdAt": "2024-08-14T17:30:00Z"
+  },
+  {
+    "title": "Next.js 14 App Router",
+    "platform": "Vercel",
+    "url": "https://nextjs.org/docs/app",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["Next.js", "React", "SSR", "Frontend"],
+    "notes": "New App Router features in Next.js 14",
+    "createdAt": "2024-07-28T10:15:00Z"
+  },
+  {
+    "title": "Git Advanced Workflows",
+    "platform": "GitHub",
+    "url": "https://docs.github.com/en/get-started/using-git",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["Git", "Version Control", "GitHub"],
+    "notes": "Advanced Git commands and workflows",
+    "createdAt": "2024-07-15T14:40:00Z"
+  },
+  {
+    "title": "Vue.js 3 Composition API",
+    "platform": "Vue Mastery",
+    "url": "https://www.vuemastery.com/courses/vue-3-essentials",
+    "resourceType": "course",
+    "resourceStatus": "in progress",
+    "tags": ["Vue.js", "Frontend", "JavaScript", "Composition API"],
+    "notes": "Learning Vue 3's new composition API",
+    "createdAt": "2024-06-20T09:30:00Z"
+  },
+  {
+    "title": "Kubernetes Basics",
+    "platform": "Kubernetes.io",
+    "url": "https://kubernetes.io/docs/tutorials/",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["Kubernetes", "DevOps", "Containers", "Orchestration"],
+    "notes": "Need to understand container orchestration",
+    "createdAt": "2024-06-05T16:20:00Z"
+  },
+  {
+    "title": "Tailwind CSS Best Practices",
+    "platform": "Tailwind Blog",
+    "url": "https://tailwindcss.com/blog",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["Tailwind", "CSS", "Frontend", "Styling"],
+    "notes": "Great insights on utility-first CSS",
+    "createdAt": "2024-05-15T11:45:00Z"
+  },
+  {
+    "title": "Redis Caching Strategies",
+    "platform": "Redis University",
+    "url": "https://university.redis.com/",
+    "resourceType": "course",
+    "resourceStatus": "reference",
+    "tags": ["Redis", "Caching", "Database", "Performance"],
+    "notes": "Important for scaling applications",
+    "createdAt": "2024-05-02T13:15:00Z"
+  },
+  {
+    "title": "Python for Web Development",
+    "platform": "Real Python",
+    "url": "https://realpython.com/",
+    "resourceType": "course",
+    "resourceStatus": "to read",
+    "tags": ["Python", "Backend", "Django", "Flask"],
+    "notes": "Exploring Python as backend option",
+    "createdAt": "2024-04-18T15:30:00Z"
+  },
+  {
+    "title": "WebSocket Implementation Guide",
+    "platform": "MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+    "resourceType": "article",
+    "resourceStatus": "in progress",
+    "tags": ["WebSocket", "Real-time", "JavaScript", "API"],
+    "notes": "Building real-time features",
+    "createdAt": "2024-04-08T10:20:00Z"
+  },
+  {
+    "title": "Machine Learning with Python",
+    "platform": "Coursera",
+    "url": "https://www.coursera.org/learn/machine-learning-python",
+    "resourceType": "course",
+    "resourceStatus": "to read",
+    "tags": ["Python", "Machine Learning", "Data Science", "AI"],
+    "notes": "Introduction to ML concepts",
+    "createdAt": "2024-11-20T09:15:00Z"
+  },
+  {
+    "title": "VS Code Extension Development",
+    "platform": "VS Code Docs",
+    "url": "https://code.visualstudio.com/api",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["VS Code", "Extensions", "TypeScript", "Tools"],
+    "notes": "Creating custom VS Code extensions",
+    "createdAt": "2024-11-18T16:30:00Z"
+  },
+  {
+    "title": "Rust Programming Language",
+    "platform": "Rust Book",
+    "url": "https://doc.rust-lang.org/book/",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["Rust", "Systems Programming", "Memory Safety"],
+    "notes": "Learning systems programming with Rust",
+    "createdAt": "2024-11-12T11:45:00Z"
+  },
+  {
+    "title": "Microservices Architecture",
+    "platform": "Pluralsight",
+    "url": "https://www.pluralsight.com/courses/microservices-architecture",
+    "resourceType": "course",
+    "resourceStatus": "in progress",
+    "tags": ["Microservices", "Architecture", "Backend", "Scalability"],
+    "notes": "Understanding microservices patterns",
+    "createdAt": "2024-11-08T14:20:00Z"
+  },
+  {
+    "title": "Vim Mastery Tutorial",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=vim-tutorial",
+    "resourceType": "video",
+    "resourceStatus": "completed",
+    "tags": ["Vim", "Productivity", "Tools", "Editor"],
+    "notes": "Improved text editing efficiency",
+    "createdAt": "2024-11-05T10:30:00Z"
+  },
+  {
+    "title": "Linux Command Line Basics",
+    "platform": "Linux Foundation",
+    "url": "https://www.linuxfoundation.org/training/",
+    "resourceType": "course",
+    "resourceStatus": "completed",
+    "tags": ["Linux", "Command Line", "System Administration"],
+    "notes": "Essential Linux skills for developers",
+    "createdAt": "2024-10-30T15:45:00Z"
+  },
+  {
+    "title": "Design Patterns in JavaScript",
+    "platform": "dev.to",
+    "url": "https://dev.to/design-patterns-javascript",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["JavaScript", "Design Patterns", "Architecture", "Best Practices"],
+    "notes": "Common patterns for better code structure",
+    "createdAt": "2024-10-22T09:20:00Z"
+  },
+  {
+    "title": "Webpack Configuration Guide",
+    "platform": "Webpack Docs",
+    "url": "https://webpack.js.org/configuration/",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["Webpack", "Build Tools", "JavaScript", "Bundling"],
+    "notes": "Advanced webpack configuration",
+    "createdAt": "2024-10-15T13:10:00Z"
+  },
+  {
+    "title": "SQLite Performance Tips",
+    "platform": "SQLite.org",
+    "url": "https://www.sqlite.org/optoverview.html",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["SQLite", "Database", "Performance", "SQL"],
+    "notes": "Optimizing SQLite queries",
+    "createdAt": "2024-10-08T11:55:00Z"
+  },
+  {
+    "title": "GitHub Actions CI/CD",
+    "platform": "GitHub",
+    "url": "https://docs.github.com/en/actions",
+    "resourceType": "article",
+    "resourceStatus": "in progress",
+    "tags": ["GitHub", "CI/CD", "DevOps", "Automation"],
+    "notes": "Setting up continuous integration",
+    "createdAt": "2024-09-25T16:40:00Z"
+  },
+  {
+    "title": "Stripe Payment Integration",
+    "platform": "Stripe",
+    "url": "https://stripe.com/docs",
+    "resourceType": "tool",
+    "resourceStatus": "reference",
+    "tags": ["Stripe", "Payments", "API", "E-commerce"],
+    "notes": "Payment processing implementation",
+    "createdAt": "2024-09-20T12:25:00Z"
+  },
+  {
+    "title": "Flutter Mobile Development",
+    "platform": "Flutter.dev",
+    "url": "https://flutter.dev/docs",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["Flutter", "Mobile", "Dart", "Cross-platform"],
+    "notes": "Cross-platform mobile development",
+    "createdAt": "2024-09-12T08:15:00Z"
+  },
+  {
+    "title": "React Query Data Fetching",
+    "platform": "TanStack",
+    "url": "https://tanstack.com/query/latest",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["React", "Data Fetching", "State Management", "JavaScript"],
+    "notes": "Powerful data synchronization for React",
+    "createdAt": "2024-12-01T10:30:00Z"
+  },
+  {
+    "title": "Advanced React Patterns",
+    "platform": "React Training",
+    "url": "https://reacttraining.com/patterns",
+    "resourceType": "course",
+    "resourceStatus": "in progress",
+    "tags": ["React", "Patterns", "Advanced", "Frontend"],
+    "notes": "Learning compound components and render props",
+    "createdAt": "2024-11-28T14:20:00Z"
+  },
+  {
+    "title": "Node.js Security Best Practices",
+    "platform": "OWASP",
+    "url": "https://owasp.org/nodejs-security/",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["Node.js", "Security", "Backend", "Best Practices"],
+    "notes": "Essential security guidelines for Node.js apps",
+    "createdAt": "2024-11-25T16:45:00Z"
+  },
+  {
+    "title": "TypeScript Advanced Types",
+    "platform": "TypeScript Deep Dive",
+    "url": "https://basarat.gitbook.io/typescript/",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["TypeScript", "Advanced", "Types", "JavaScript"],
+    "notes": "Deep dive into TypeScript's type system",
+    "createdAt": "2024-11-22T09:15:00Z"
+  },
+  {
+    "title": "JavaScript Performance Optimization",
+    "platform": "web.dev",
+    "url": "https://web.dev/fast/",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["JavaScript", "Performance", "Web Development", "Optimization"],
+    "notes": "Comprehensive guide to JS performance",
+    "createdAt": "2024-11-19T11:30:00Z"
+  },
+  {
+    "title": "Express.js Middleware Guide",
+    "platform": "Express Docs",
+    "url": "https://expressjs.com/en/guide/using-middleware.html",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["Express", "Node.js", "Middleware", "Backend"],
+    "notes": "Understanding Express middleware patterns",
+    "createdAt": "2024-11-16T13:40:00Z"
+  },
+  {
+    "title": "CSS Flexbox Mastery",
+    "platform": "CSS Tricks",
+    "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["CSS", "Flexbox", "Layout", "Frontend"],
+    "notes": "Complete guide to CSS Flexbox",
+    "createdAt": "2024-11-13T15:20:00Z"
+  },
+  {
+    "title": "API Design Guidelines",
+    "platform": "Microsoft",
+    "url": "https://github.com/Microsoft/api-guidelines",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["API", "Design", "REST", "Best Practices"],
+    "notes": "Microsoft's API design guidelines",
+    "createdAt": "2024-11-09T10:10:00Z"
+  },
+  {
+    "title": "Database Indexing Strategies",
+    "platform": "Database Journal",
+    "url": "https://www.databasejournal.com/",
+    "resourceType": "article",
+    "resourceStatus": "in progress",
+    "tags": ["Database", "Indexing", "Performance", "SQL"],
+    "notes": "Advanced database optimization techniques",
+    "createdAt": "2024-11-06T12:50:00Z"
+  },
+  {
+    "title": "Responsive Web Design Principles",
+    "platform": "Smashing Magazine",
+    "url": "https://www.smashingmagazine.com/responsive-web-design/",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["Responsive Design", "CSS", "Mobile", "Frontend"],
+    "notes": "Modern responsive design techniques",
+    "createdAt": "2024-11-02T14:30:00Z"
+  },
+  {
+    "title": "GraphQL Subscription Implementation",
+    "platform": "Apollo GraphQL",
+    "url": "https://www.apollographql.com/docs/apollo-server/data/subscriptions/",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["GraphQL", "Subscriptions", "Real-time", "API"],
+    "notes": "Real-time data with GraphQL subscriptions",
+    "createdAt": "2024-10-29T16:15:00Z"
+  },
+  {
+    "title": "Docker Compose for Development",
+    "platform": "Docker",
+    "url": "https://docs.docker.com/compose/",
+    "resourceType": "tool",
+    "resourceStatus": "in progress",
+    "tags": ["Docker", "Development", "Containers", "DevOps"],
+    "notes": "Multi-container application development",
+    "createdAt": "2024-10-26T09:40:00Z"
+  },
+  {
+    "title": "AWS S3 Best Practices",
+    "platform": "AWS",
+    "url": "https://docs.aws.amazon.com/s3/",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["AWS", "S3", "Cloud Storage", "Best Practices"],
+    "notes": "Optimizing S3 for performance and cost",
+    "createdAt": "2024-10-23T11:25:00Z"
+  },
+  {
+    "title": "Testing React Components",
+    "platform": "Testing Library",
+    "url": "https://testing-library.com/docs/react-testing-library/intro/",
+    "resourceType": "article",
+    "resourceStatus": "completed",
+    "tags": ["React", "Testing", "Unit Testing", "Frontend"],
+    "notes": "Best practices for testing React apps",
+    "createdAt": "2024-10-19T13:55:00Z"
+  },
+  {
+    "title": "MongoDB Aggregation Pipeline",
+    "platform": "MongoDB",
+    "url": "https://docs.mongodb.com/manual/core/aggregation-pipeline/",
+    "resourceType": "article",
+    "resourceStatus": "in progress",
+    "tags": ["MongoDB", "Aggregation", "Database", "NoSQL"],
+    "notes": "Complex data processing with aggregation",
+    "createdAt": "2024-10-16T15:30:00Z"
+  },
+  {
+    "title": "Git Branching Strategies",
+    "platform": "Atlassian",
+    "url": "https://www.atlassian.com/git/tutorials/comparing-workflows",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["Git", "Branching", "Workflow", "Version Control"],
+    "notes": "Different Git workflow strategies",
+    "createdAt": "2024-10-13T08:45:00Z"
+  },
+  {
+    "title": "Sass Advanced Features",
+    "platform": "Sass Lang",
+    "url": "https://sass-lang.com/guide",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["Sass", "CSS", "Preprocessing", "Styling"],
+    "notes": "Advanced Sass features and mixins",
+    "createdAt": "2024-10-10T17:20:00Z"
+  },
+  {
+    "title": "Node.js Streams Tutorial",
+    "platform": "Node.js",
+    "url": "https://nodejs.org/api/stream.html",
+    "resourceType": "article",
+    "resourceStatus": "in progress",
+    "tags": ["Node.js", "Streams", "Backend", "Performance"],
+    "notes": "Understanding Node.js streams for large data",
+    "createdAt": "2024-10-07T10:35:00Z"
+  },
+  {
+    "title": "Web Accessibility Guidelines",
+    "platform": "W3C",
+    "url": "https://www.w3.org/WAI/WCAG21/quickref/",
+    "resourceType": "article",
+    "resourceStatus": "reference",
+    "tags": ["Accessibility", "WCAG", "Frontend", "Inclusive Design"],
+    "notes": "Web accessibility best practices",
+    "createdAt": "2024-10-04T12:10:00Z"
+  },
+  {
+    "title": "Progressive Web Apps Guide",
+    "platform": "Google Developers",
+    "url": "https://developers.google.com/web/progressive-web-apps",
+    "resourceType": "article",
+    "resourceStatus": "to read",
+    "tags": ["PWA", "Service Workers", "Offline", "Web Development"],
+    "notes": "Building progressive web applications",
+    "createdAt": "2024-10-01T14:25:00Z"
+  },
+  {
+    "title": "Svelte Framework Basics",
+    "platform": "Svelte",
+    "url": "https://svelte.dev/tutorial/basics",
+    "resourceType": "course",
+    "resourceStatus": "to read",
+    "tags": ["Svelte", "Framework", "JavaScript", "Frontend"],
+    "notes": "Exploring Svelte as React alternative",
+    "createdAt": "2024-09-27T16:50:00Z"
+  }
+]
