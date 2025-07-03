@@ -11,7 +11,7 @@
   [![MongoDB](https://img.shields.io/badge/MongoDB-Latest-green.svg)](https://mongodb.com/)
 </div>
 
----
+
 
 ## Overview
 
@@ -49,7 +49,7 @@ KeepHub is a comprehensive digital resource management system built with the MER
 - Intuitive navigation
 - Clean, modern interface
 
----
+
 
 ## Tech Stack
 
@@ -78,7 +78,7 @@ KeepHub is a comprehensive digital resource management system built with the MER
 - **Express Mongo Sanitize** - NoSQL injection prevention
 - **CORS** - Cross-origin resource sharing
 
----
+
 
 ## Quick Start
 
@@ -134,7 +134,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
    npm run populate
    ```
 
----
+
 
 ## Application Screenshots
 
@@ -154,7 +154,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ### Dark Theme
 ![Dark Theme](./screenshots/dark-theme.png)
 
----
+
 
 ## Database Schema
 
@@ -198,7 +198,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 }
 ```
 
----
+
 
 ## API Documentation
 
@@ -220,7 +220,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 - `PATCH /api/v1/users/update-user` - Update user profile
 - `GET /api/v1/users/admin/app-stats` - Admin statistics
 
----
+
 
 ## Project Structure
 
@@ -240,7 +240,7 @@ keephub/
 └── server.js             # Express server entry point
 ```
 
----
+
 
 ## Available Scripts
 
@@ -251,7 +251,7 @@ keephub/
 - `npm run setup-production-app` - Build application for production
 - `npm run populate` - Populate database with sample data
 
----
+
 
 ## Contributing
 
@@ -261,13 +261,13 @@ keephub/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
----
+
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+
 
 <div align="center">
   <strong>⭐ Star this repository if you find it helpful!</strong>
