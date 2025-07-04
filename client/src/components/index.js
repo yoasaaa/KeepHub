@@ -22,3 +22,5 @@ export { default as SearchContainer } from './SearchContainer';
 export { default as PageBtnContainer } from './PageBtnContainer';
 export { default as Loading } from './Loading';
 export { default as ErrorElement } from './ErrorElement';
+export { default as SmartAnalyzer } from './SmartAnalyzer';
+export { default as SuggestionModal } from './SuggestionModal';
