@@ -5,10 +5,10 @@
   
   **A modern MERN stack application for organizing and managing your digital resources**
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![Node.js](https://img.shields.io/badge/Node.js-18+-brightgreen.svg)](https://nodejs.org/)
-  [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
   [![MongoDB](https://img.shields.io/badge/MongoDB-Latest-green.svg)](https://mongodb.com/)
+  [![Express](https://img.shields.io/badge/Express-4.18+-black.svg)](https://expressjs.com/)
+  [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
+  [![Node.js](https://img.shields.io/badge/Node.js-18+-brightgreen.svg)](https://nodejs.org/)
   [![Vite](https://img.shields.io/badge/Vite-7+-purple.svg)](https://vitejs.dev/)
 </div>
 
