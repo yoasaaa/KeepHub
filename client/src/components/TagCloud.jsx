@@ -5,10 +5,9 @@ const Wrapper = styled.div`
   .tag-cloud-title {
     color: var(--text-color);
     font-size: 1.375rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 1.5rem 0;
     text-align: center;
-    letter-spacing: -0.025em;
   }
 
   .tags-container {
@@ -23,8 +22,8 @@ const Wrapper = styled.div`
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: default;
@@ -33,7 +32,7 @@ const Wrapper = styled.div`
 
   .tag-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .tag-count {
@@ -46,104 +45,79 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 600;
     min-width: 20px;
   }
 
+  /* Tag sizes based on frequency */
   .tag-size-1 {
     font-size: 0.875rem;
-    background: #fef3c7;
-    color: #92400e;
-    border: 1px solid #fbbf24;
   }
 
   .tag-size-2 {
     font-size: 1rem;
-    background: #dbeafe;
-    color: #1e40af;
-    border: 1px solid #3b82f6;
   }
 
   .tag-size-3 {
     font-size: 1.125rem;
-    background: #dcfce7;
-    color: #166534;
-    border: 1px solid #22c55e;
   }
 
   .tag-size-4 {
     font-size: 1.25rem;
-    background: #fce7f3;
-    color: #be185d;
-    border: 1px solid #ec4899;
   }
 
   .tag-size-5 {
     font-size: 1.375rem;
-    background: #e0e7ff;
-    color: #3730a3;
-    border: 1px solid #6366f1;
   }
 
-  /* Additional color variations for more diversity */
   .tag-color-0 {
-    background: #fef3c7;
-    color: #92400e;
-    border: 1px solid #fbbf24;
+    background: var(--tag-yellow-bg);
+    color: var(--tag-yellow-color);
   }
 
   .tag-color-1 {
-    background: #dbeafe;
-    color: #1e40af;
-    border: 1px solid #3b82f6;
+    background: var(--tag-blue-bg);
+    color: var(--tag-blue-color);
   }
 
   .tag-color-2 {
-    background: #dcfce7;
-    color: #166534;
-    border: 1px solid #22c55e;
+    background: var(--tag-green-bg);
+    color: var(--tag-green-color);
   }
 
   .tag-color-3 {
-    background: #fce7f3;
-    color: #be185d;
-    border: 1px solid #ec4899;
+    background: var(--tag-pink-bg);
+    color: var(--tag-pink-color);
   }
 
   .tag-color-4 {
-    background: #e0e7ff;
-    color: #3730a3;
-    border: 1px solid #6366f1;
+    background: var(--tag-purple-bg);
+    color: var(--tag-purple-color);
   }
 
   .tag-color-5 {
-    background: #fef2f2;
-    color: #991b1b;
-    border: 1px solid #ef4444;
+    background: var(--tag-red-bg);
+    color: var(--tag-red-color);
   }
 
   .tag-color-6 {
-    background: #ecfdf5;
-    color: #047857;
-    border: 1px solid #10b981;
+    background: var(--tag-cyan-bg);
+    color: var(--tag-cyan-color);
   }
 
   .tag-color-7 {
-    background: #fff7ed;
-    color: #c2410c;
-    border: 1px solid #f97316;
+    background: var(--tag-orange-bg);
+    color: var(--tag-orange-color);
   }
 
   .tag-color-8 {
-    background: #f0f9ff;
-    color: #0369a1;
-    border: 1px solid #0ea5e9;
+    background: var(--tag-blue-bg);
+    color: var(--tag-blue-color);
   }
 
   .tag-color-9 {
-    background: #fdf4ff;
-    color: #a21caf;
-    border: 1px solid #c084fc;
+    background: var(--tag-gray-bg);
+    color: var(--tag-gray-color);
   }
 
   .no-tags {
@@ -166,7 +140,6 @@ const TagCloud = ({ tagStats }) => {
     );
   }
 
-  // Calculate tag sizes based on frequency
   const maxCount = Math.max(...tagStats.map(tag => tag.count));
   const getTagSize = (count) => {
     const ratio = count / maxCount;
@@ -201,7 +174,7 @@ TagCloud.propTypes = {
       tag: PropTypes.string.isRequired,
       count: PropTypes.number.isRequired,
     })
-  ),
+  ).isRequired,
 };
 
 export default TagCloud; 

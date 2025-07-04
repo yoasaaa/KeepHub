@@ -72,14 +72,14 @@ const Resource = ({
   // Generate color for tags based on string hash
   const getTagColor = (tag) => {
     const colors = [
-      { bg: 'var(--tag-yellow-bg)', color: 'var(--tag-yellow-color)', border: 'var(--tag-yellow-border)' },
-      { bg: 'var(--tag-blue-bg)', color: 'var(--tag-blue-color)', border: 'var(--tag-blue-border)' },
-      { bg: 'var(--tag-green-bg)', color: 'var(--tag-green-color)', border: 'var(--tag-green-border)' },
-      { bg: 'var(--tag-pink-bg)', color: 'var(--tag-pink-color)', border: 'var(--tag-pink-border)' },
-      { bg: 'var(--tag-purple-bg)', color: 'var(--tag-purple-color)', border: 'var(--tag-purple-border)' },
-      { bg: 'var(--tag-red-bg)', color: 'var(--tag-red-color)', border: 'var(--tag-red-border)' },
-      { bg: 'var(--tag-cyan-bg)', color: 'var(--tag-cyan-color)', border: 'var(--tag-cyan-border)' },
-      { bg: 'var(--tag-orange-bg)', color: 'var(--tag-orange-color)', border: 'var(--tag-orange-border)' },
+      { bg: 'var(--tag-yellow-bg)', color: 'var(--tag-yellow-color)' },
+      { bg: 'var(--tag-blue-bg)', color: 'var(--tag-blue-color)' },
+      { bg: 'var(--tag-green-bg)', color: 'var(--tag-green-color)' },
+      { bg: 'var(--tag-pink-bg)', color: 'var(--tag-pink-color)' },
+      { bg: 'var(--tag-purple-bg)', color: 'var(--tag-purple-color)' },
+      { bg: 'var(--tag-red-bg)', color: 'var(--tag-red-color)' },
+      { bg: 'var(--tag-cyan-bg)', color: 'var(--tag-cyan-color)' },
+      { bg: 'var(--tag-orange-bg)', color: 'var(--tag-orange-color)' },
     ];
     
     let hash = 0;
@@ -125,8 +125,7 @@ const Resource = ({
                   className='tag'
                   style={{
                     backgroundColor: tagColor.bg,
-                    color: tagColor.color,
-                    borderColor: tagColor.border
+                    color: tagColor.color
                   }}
                 >
                   {tag}

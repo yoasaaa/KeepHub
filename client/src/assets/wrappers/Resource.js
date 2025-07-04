@@ -66,12 +66,12 @@ const Wrapper = styled.article`
   }
   
   .tag {
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 500;
     text-transform: none;
-    border: 1px solid;
+    border: none;
     transition: all 0.2s ease;
   }
   
