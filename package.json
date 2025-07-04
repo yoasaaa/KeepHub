@@ -16,7 +16,10 @@
   "author": "Yichen Yang",
   "license": "MIT",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.10.0",
     "bcryptjs": "^2.4.3",
+    "cheerio": "^1.1.0",
     "cloudinary": "^1.37.3",
     "concurrently": "^8.2.0",
     "cookie-parser": "^1.4.6",
@@ -35,6 +38,7 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "nanoid": "^5.1.5",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "url-parse": "^1.5.10"
   }
 }
