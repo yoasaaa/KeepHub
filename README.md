@@ -9,13 +9,14 @@
   [![Node.js](https://img.shields.io/badge/Node.js-18+-brightgreen.svg)](https://nodejs.org/)
   [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
   [![MongoDB](https://img.shields.io/badge/MongoDB-Latest-green.svg)](https://mongodb.com/)
+  [![Vite](https://img.shields.io/badge/Vite-7+-purple.svg)](https://vitejs.dev/)
 </div>
 
 
 
 ## Overview
 
-KeepHub is a comprehensive digital resource management system built with the MERN stack. It helps you organize, track, and manage your learning resources including articles, videos, tools, and courses with powerful analytics, search capabilities, and AI-powered content analysis.
+KeepHub is a comprehensive digital resource management system built with the MERN stack. It helps you organize, track, and manage your learning resources including articles, videos, tools, and courses with powerful analytics, search capabilities, and AI-powered content analysis using Google Gemini AI.
 
 ![Dashboard Overview](./screenshots/dashboard-overview.png)
 
@@ -32,7 +33,7 @@ KeepHub is a comprehensive digital resource management system built with the MER
 - **Smart URL Analysis**: Automatically extract metadata from any URL
 - **Intelligent Suggestions**: AI-powered title, platform, and type detection
 - **Auto-tagging**: Generate relevant tags based on content analysis
-- **Content Summarization**: Create concise summaries
+- **Content Summarization**: Create concise summaries using Google Gemini AI
 - **Caching System**: 24-hour cache for faster repeated analysis
 
 ### Analytics Dashboard
@@ -78,27 +79,31 @@ KeepHub is a comprehensive digital resource management system built with the MER
 - **JWT** - Authentication tokens
 - **bcryptjs** - Password hashing
 - **Multer** - File upload handling
+- **Cloudinary** - Image hosting and management
 
 ### AI & Content Analysis
 - **Google Gemini AI** - Advanced content analysis and summarization
 - **Cheerio** - Web scraping for content extraction
 - **Axios** - HTTP client for web content fetching
-- **Smart Caching** - Intelligent result caching system
+- **Smart Caching** - 24-hour intelligent result caching system
+- **URL Parse** - URL parsing utilities
 
 ### Security & Performance
 - **Helmet** - Security headers
 - **Express Rate Limit** - Rate limiting
 - **Express Mongo Sanitize** - NoSQL injection prevention
-- **CORS** - Cross-origin resource sharing
+- **Cookie Parser** - Cookie handling
+- **Morgan** - HTTP request logging
 
 
 
 ## Quick Start
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v18 or higher)
 - MongoDB database
 - npm or yarn
+- Google Gemini API key (for AI features)
 
 ### Installation
 
@@ -135,15 +140,15 @@ PORT=5100
 MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 JWT_EXPIRES_IN=1d
-CLOUDINARY_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+CLOUD_NAME=your_cloudinary_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_API_SECRET=your_cloudinary_api_secret
 GEMINI_API_KEY=your_google_gemini_api_key
 ```
 
 ### Demo Data
 1. Register with email: `test@test.com` and password: `secret123`
-2. Run the populate script:
+2. Then run the populate script to add sample resources:
    ```bash
    npm run populate
    ```
@@ -193,7 +198,10 @@ GEMINI_API_KEY=your_google_gemini_api_key
   },
   tags: [String],
   notes: String,
-  createdBy: ObjectId,
+  createdBy: {
+    type: mongoose.Types.ObjectId,
+    ref: 'User'
+  },
   timestamps: true
 }
 ```
@@ -204,7 +212,10 @@ GEMINI_API_KEY=your_google_gemini_api_key
   name: String,
   email: String,
   password: String,
-  lastName: String,
+  lastName: {
+    type: String,
+    default: 'lastName'
+  },
   role: {
     type: String,
     enum: ['user', 'admin'],
@@ -218,33 +229,32 @@ GEMINI_API_KEY=your_google_gemini_api_key
 ### Analysis Model
 ```javascript
 {
-  url: String,
-  userId: ObjectId,
-  extraction: {
-    success: Boolean,
-    processingTime: Number,
-    errorMessage: String
+  url: {
+    type: String,
+    required: true
   },
-  scrapedData: {
-    title: String,
-    description: String,
-    keywords: [String],
-    content: String,
-    domain: String,
-    author: String,
-    category: String
+  userId: {
+    type: mongoose.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  success: {
+    type: Boolean,
+    required: true
   },
   aiAnalysis: {
     suggestedTitle: String,
     suggestedPlatform: String,
-    suggestedType: String,
+    suggestedType: {
+      type: String,
+      enum: ['video', 'article', 'tool', 'course', 'book', 'podcast', 'other']
+    },
     suggestedTags: [String],
     generatedSummary: String
   },
-  usage: {
-    applied: Boolean,
-    appliedFields: [String],
-    resourceCreated: Boolean
+  applied: {
+    type: Boolean,
+    default: false
   },
   timestamps: true
 }
@@ -266,15 +276,16 @@ GEMINI_API_KEY=your_google_gemini_api_key
 - `PATCH /api/v1/resources/:id` - Update resource
 - `DELETE /api/v1/resources/:id` - Delete resource
 - `GET /api/v1/resources/stats` - Get resource statistics
+- `GET /api/v1/resources/tags` - Get all unique tags
 
 ### User Endpoints
 - `GET /api/v1/users/current-user` - Get current user
-- `PATCH /api/v1/users/update-user` - Update user profile
-- `GET /api/v1/users/admin/app-stats` - Admin statistics
+- `PATCH /api/v1/users/update-user` - Update user profile (supports avatar upload)
+- `GET /api/v1/users/admin/app-stats` - Admin statistics (requires admin role)
 
 ### AI Analysis Endpoints
 - `POST /api/v1/ai-analysis/analyze` - Analyze content from URL
-- `PUT /api/v1/ai-analysis/:id/usage` - Track which AI suggestions were applied
+- `PUT /api/v1/ai-analysis/:analysisId/usage` - Track which AI suggestions were applied
 
 
 ## Project Structure
@@ -282,16 +293,24 @@ GEMINI_API_KEY=your_google_gemini_api_key
 ```
 keephub/
 ├── client/                 # React frontend
+│   ├── public/            # Static assets
 │   ├── src/
 │   │   ├── components/    # Reusable UI components
 │   │   ├── pages/         # Page components
 │   │   ├── assets/        # Images & styled components
 │   │   └── utils/         # Frontend utilities
+│   ├── index.html         # HTML entry point
+│   ├── package.json       # Frontend dependencies
+│   └── vite.config.js     # Vite configuration
 ├── controllers/           # Express route handlers
+├── errors/               # Custom error classes
 ├── middleware/           # Custom middleware
 ├── models/               # Mongoose schemas
 ├── routes/               # Express routes
 ├── utils/                # Backend utilities
+├── screenshots/          # Application screenshots
+├── package.json          # Backend dependencies
+├── populate.js           # Database population script
 └── server.js             # Express server entry point
 ```
 
@@ -299,11 +318,12 @@ keephub/
 
 ## Available Scripts
 
-- `npm run dev` - Start both server and client in development
+- `npm run dev` - Start both server and client in development mode
 - `npm run server` - Start only the backend server
 - `npm run client` - Start only the frontend development server
 - `npm run setup-project` - Install dependencies for both client and server
 - `npm run setup-production-app` - Build application for production
+- `npm run start` - Start production server
 - `npm run populate` - Populate database with sample data
 
 
