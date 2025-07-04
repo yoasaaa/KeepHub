@@ -9,6 +9,7 @@
     "server": "nodemon server.js",
     "client": "cd client && npm run dev",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
     "populate": "node populate.js"
   },
   "keywords": ["resource management", "digital resources", "mern stack"],
