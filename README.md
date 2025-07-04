@@ -15,7 +15,7 @@
 
 ## Overview
 
-KeepHub is a comprehensive digital resource management system built with the MERN stack. It helps you organize, track, and manage your learning resources including articles, videos, tools, and courses with powerful analytics and search capabilities.
+KeepHub is a comprehensive digital resource management system built with the MERN stack. It helps you organize, track, and manage your learning resources including articles, videos, tools, and courses with powerful analytics, search capabilities, and AI-powered content analysis.
 
 ![Dashboard Overview](./screenshots/dashboard-overview.png)
 
@@ -24,9 +24,16 @@ KeepHub is a comprehensive digital resource management system built with the MER
 ### Resource Management
 - **CRUD Operations**: Add, edit, delete, and view digital resources
 - **Status Tracking**: Track resources as 'to read', 'in progress', 'completed', or 'reference'
-- **Type Classification**: Organize by type - video, article, tool, course
+- **Type Classification**: Organize by type - video, article, tool, course, book, podcast
 - **Tagging System**: Custom tags for flexible organization
 - **Notes & URLs**: Store additional information and direct links
+
+### AI Content Analysis
+- **Smart URL Analysis**: Automatically extract metadata from any URL
+- **Intelligent Suggestions**: AI-powered title, platform, and type detection
+- **Auto-tagging**: Generate relevant tags based on content analysis
+- **Content Summarization**: Create concise summaries
+- **Caching System**: 24-hour cache for faster repeated analysis
 
 ### Analytics Dashboard
 - Resource status distribution charts
@@ -71,6 +78,12 @@ KeepHub is a comprehensive digital resource management system built with the MER
 - **JWT** - Authentication tokens
 - **bcryptjs** - Password hashing
 - **Multer** - File upload handling
+
+### AI & Content Analysis
+- **Google Gemini AI** - Advanced content analysis and summarization
+- **Cheerio** - Web scraping for content extraction
+- **Axios** - HTTP client for web content fetching
+- **Smart Caching** - Intelligent result caching system
 
 ### Security & Performance
 - **Helmet** - Security headers
@@ -125,6 +138,7 @@ JWT_EXPIRES_IN=1d
 CLOUDINARY_NAME=your_cloudinary_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+GEMINI_API_KEY=your_google_gemini_api_key
 ```
 
 ### Demo Data
@@ -140,6 +154,9 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 ### Adding New Resources
 ![Add Resource](./screenshots/add-resource.png)
+
+### AI Content Analysis
+![AI Content Analysis](./screenshots/ai-content-analysis.png)
 
 ### Search and Filter
 ![Search Interface](./screenshots/search-filter.png)
@@ -166,7 +183,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
   url: String,
   resourceType: {
     type: String,
-    enum: ['video', 'article', 'tool', 'course'],
+    enum: ['video', 'article', 'tool', 'course', 'book', 'podcast', 'other'],
     default: 'article'
   },
   resourceStatus: {
@@ -198,6 +215,41 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 }
 ```
 
+### Analysis Model
+```javascript
+{
+  url: String,
+  userId: ObjectId,
+  extraction: {
+    success: Boolean,
+    processingTime: Number,
+    errorMessage: String
+  },
+  scrapedData: {
+    title: String,
+    description: String,
+    keywords: [String],
+    content: String,
+    domain: String,
+    author: String,
+    category: String
+  },
+  aiAnalysis: {
+    suggestedTitle: String,
+    suggestedPlatform: String,
+    suggestedType: String,
+    suggestedTags: [String],
+    generatedSummary: String
+  },
+  usage: {
+    applied: Boolean,
+    appliedFields: [String],
+    resourceCreated: Boolean
+  },
+  timestamps: true
+}
+```
+
 
 
 ## API Documentation
@@ -220,6 +272,9 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 - `PATCH /api/v1/users/update-user` - Update user profile
 - `GET /api/v1/users/admin/app-stats` - Admin statistics
 
+### AI Analysis Endpoints
+- `POST /api/v1/ai-analysis/analyze` - Analyze content from URL
+- `PUT /api/v1/ai-analysis/:id/usage` - Track which AI suggestions were applied
 
 
 ## Project Structure

@@ -1,4 +1,17 @@
-import { FaLocationArrow, FaCalendarAlt, FaBookOpen, FaClock, FaCheckCircle, FaBookmark } from 'react-icons/fa';
+import { 
+  FaCalendarAlt, 
+  FaBookOpen, 
+  FaClock, 
+  FaCheckCircle, 
+  FaBookmark,
+  FaPlay,
+  FaNewspaper,
+  FaTools,
+  FaGraduationCap,
+  FaBook,
+  FaMicrophone,
+  FaQuestionCircle
+} from 'react-icons/fa';
 import { Link, Form } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Resource';
 import ResourceInfo from './ResourceInfo';
@@ -35,6 +48,27 @@ const Resource = ({
     }
   };
 
+  // Get type icon based on resource type
+  const getTypeIcon = (type) => {
+    switch (type) {
+      case 'video':
+        return <FaPlay />;
+      case 'article':
+        return <FaNewspaper />;
+      case 'tool':
+        return <FaTools />;
+      case 'course':
+        return <FaGraduationCap />;
+      case 'book':
+        return <FaBook />;
+      case 'podcast':
+        return <FaMicrophone />;
+      case 'other':
+      default:
+        return <FaQuestionCircle />;
+    }
+  };
+
   // Generate color for tags based on string hash
   const getTagColor = (tag) => {
     const colors = [
@@ -66,7 +100,7 @@ const Resource = ({
       </header>
       <div className='content'>
         <div className='content-center'>
-          <ResourceInfo icon={<FaLocationArrow />} text={resourceType} />
+          <ResourceInfo icon={getTypeIcon(resourceType)} text={resourceType} />
           <ResourceInfo icon={<FaCalendarAlt />} text={date} />
         </div>
 

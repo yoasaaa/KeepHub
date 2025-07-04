@@ -10,6 +10,9 @@ export const RESOURCE_TYPE = {
   ARTICLE: 'article',
   TOOL: 'tool',
   COURSE: 'course',
+  BOOK: 'book',
+  PODCAST: 'podcast',
+  OTHER: 'other',
 };
 
 export const RESOURCE_SORT_BY = {
